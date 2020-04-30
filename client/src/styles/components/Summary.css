@@ -1,0 +1,46 @@
+.summary {
+    background-color: #1cb351;
+    background-image: linear-gradient( -135deg, #6eeba6 10%, #1cb351 100%);
+    color: #fff;
+}
+
+.summary hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+.summary-title {
+    font-size: 1.2rem;
+}
+
+.summary-expenses,
+.summary-total {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.create-expense {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #1cb351;
+    font-weight: 700;
+
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 60px rgba(24, 153, 82, 0.5);
+}
+
+.create-expense:hover,
+.create-expense:focus {
+    background-color: #fff;
+    border: 2px solid #1cb351;
+}
+
+.create-expense:hover {
+    color: #1cb351;
+    text-decoration: none;
+}

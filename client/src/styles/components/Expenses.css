@@ -1,0 +1,21 @@
+.expenses .expenses-price {
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.expenses-published {
+    color: gray;
+}
+
+.expenses-link {
+    display: block;
+    padding: .7rem;
+}
+
+.expenses-link:hover {
+    text-decoration: none;
+}
+
+.expenses-desc {
+    color: #1cb351;
+}

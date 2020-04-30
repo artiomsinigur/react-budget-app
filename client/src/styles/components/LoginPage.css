@@ -1,0 +1,17 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    background-color: black;
+    background-image: url('./../../img/bg-city1.jpg');
+    background-size: cover;
+}
+
+.login-page-inner {
+    padding: 3rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}

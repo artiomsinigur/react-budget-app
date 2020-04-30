@@ -1,0 +1,34 @@
+@import './components/LoginPage.css';
+@import './components/Summary.css';
+@import './components/Expenses.css';
+@import './components/Create.css';
+@import './components/Edit.css';
+
+#root {
+    position: relative;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 800px;
+}
+
+/* Form styles */
+.form-input {
+    width: 100%;
+    height: 50px;
+}
+
+input[type=text],
+select.form-control {
+    height: 100%;
+    width: 100%;
+    border-radius: 1px;
+}
+
+textarea.form-control {
+    height: 100px;
+    width: 100%;
+    border-radius: 1px;
+}
