@@ -4,8 +4,8 @@
   "description": "Application to manage your expenses",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js",
-    "serve": "nodemon server/server.js",
+    "start": "node server.js",
+    "serve": "nodemon server.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run serve\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
