@@ -2,10 +2,6 @@ const express = require('express')
 const router = express.Router()
 const passport = require('passport')
 
-router.get('/api/login', async (req, res) => {
-    res.send('<h1>Veuillez vous connecter</h1>')
-})
-
 router.get('/api/profile', (req, res) => {
     res.send(req.user)
     // res.send(req.session)

@@ -22,7 +22,7 @@ app.use(bodyParser.json())
 app.use(cookieParser())
 // Store in session the id of current user
 app.use(cookieSession({
-    name: 'feedback',
+    name: 'budget',
     keys: [process.env.COOKIE_KEY],
     // Cookie Options
     maxAge: 24 * 60 * 60 * 1000 // 24 hours
