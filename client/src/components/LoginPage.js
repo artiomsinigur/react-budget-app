@@ -1,8 +1,13 @@
 import React, { Fragment } from 'react'
 import { connect } from 'react-redux'
 import Button from 'react-bootstrap/Button'
+import { fetchUser } from '../api/user'
 
 class LoginPage extends React.Component {
+    componentDidMount() {
+        this.props.dispatch(fetchUser())
+    }
+
     isLoginGoogle = () => window.open('/auth/google', '_self')
     isLoginFacebook = () => window.open('/auth/facebook', '_self')
     isLoginTwitter = () => window.open('/auth/twitter', '_self')
