@@ -3,15 +3,15 @@ import { connect } from 'react-redux'
 import { Route, Redirect } from 'react-router-dom'
 import Header from '../components/Header'
 
-function PrivateRoute({ isAuth, component: Component, ...rest }) {
+function PrivateRoute({ isAuth, children, ...rest }) {
     return (
         <Route 
             {...rest} 
-            component={(props) => (
+            render={() => (
             isAuth ? (
                 <Fragment>
                     <Header />
-                    <Component {...props} />
+                    children
                 </Fragment>
             ) : (
                 <Redirect to="/" />
